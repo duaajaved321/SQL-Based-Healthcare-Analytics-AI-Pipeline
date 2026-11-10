@@ -1,99 +1,47 @@
 # SQL-Based Healthcare Analytics & ML Pipeline
 
-**AI Internship | Milestone 02**
+**AI Internship | Healthcare Analytics**
 
-A healthcare data analytics pipeline that uses **SQL, Python, and machine learning preprocessing** to extract, analyze, visualize, and prepare structured healthcare data for predictive modeling.
-
-## Features
-
-- **Database Integration:** Connects to a local SQLite database.
-- **SQL Queries:** Uses joins to combine patients, appointments, doctors, and hospital information.
-- **Exploratory Data Analysis (EDA):** Analyzes patient demographics, appointment patterns, medical specialties, and prescription activity.
-- **Data Visualization:** Uses Matplotlib and Seaborn to explore healthcare trends.
-- **Feature Engineering:** Extracts age-related and appointment-based features.
-- **ML Preprocessing:** Applies categorical encoding, numerical scaling, and train-test splitting.
-
-## Tech Stack
-
-- Python
-- SQLite / SQL
-- Pandas and NumPy
-- Matplotlib and Seaborn
-- Scikit-learn
-- Google Colab / Jupyter Notebook
+A healthcare data analytics workflow using SQL, SQLite, and Python to query relational hospital data, explore operational patterns, engineer features, and prepare structured data for machine-learning experiments.
 
 ## Workflow
 
-```text
-Healthcare SQL Dataset
-         ↓
-SQLite Database
-         ↓
-SQL Joins & Data Extraction
-         ↓
-Data Cleaning & Feature Engineering
-         ↓
-Exploratory Data Analysis
-         ↓
-Visualizations
-         ↓
-ML Preprocessing
-         ↓
-Train / Test Datasets
-```
+`HospitalDB.sql` → SQLite database → SQL joins and extraction → cleaning and feature engineering → exploratory analysis → visualizations → preprocessing and train/test data.
 
-## Key Results
+## What It Covers
 
-The notebook demonstrates:
+- SQL joins across patients, appointments, doctors, and hospital-related tables
+- Exploratory analysis of patient demographics and healthcare activity
+- Feature engineering using demographic and appointment information
+- Visual analysis with Matplotlib and Seaborn
+- Categorical encoding, numerical scaling, and train/test preparation
 
-- Analysis of 100 appointment records.
-- Exploration of patient ages, appointment reasons, and healthcare activity.
-- Generation of demographic and appointment-related features.
-- Preparation of 80 training and 20 testing samples.
-- Transformation of the input data into 29 features for machine learning.
+## Tools
 
-These results reflect the example dataset and notebook outputs, rather than an independently validated predictive model.
+Python, SQLite, SQL, Pandas, NumPy, Matplotlib, Seaborn, scikit-learn, Jupyter Notebook.
 
-## How to Run
+## Run the Notebook
 
-1. Clone or download the repository.
-2. Install the required libraries:
+1. Clone or download this repository.
+2. Install the notebook dependencies:
 
    ```bash
    pip install pandas numpy matplotlib seaborn scikit-learn jupyter
    ```
 
-3. Place the original SQLite-compatible `HospitalDB.sql` file in the project directory.
-4. Open `healthcare_analytics.ipynb` in Jupyter Notebook or Google Colab.
-5. Run all cells sequentially.
+3. Keep `HospitalDB.sql` in the repository root. It is included in this repository.
+4. Open `SQL_Healthcare_Analytics_Pipeline_GitHub_Ready.ipynb` in Jupyter Notebook or Google Colab.
+5. Run the cells sequentially.
 
-The notebook creates a local SQLite database from the supplied SQL script and executes the analytics pipeline.
+## Example Dataset Results
 
-## What I Learned
-
-- Writing SQL queries and joining relational tables.
-- Extracting SQL data into Pandas DataFrames.
-- Performing exploratory data analysis and visualizations.
-- Identifying patterns in structured healthcare datasets.
-- Creating features from demographic and date information.
-- Applying encoding and feature scaling.
-- Preparing training and testing datasets for machine learning.
+The notebook works with an example dataset containing 100 appointment records and prepares an 80/20 train/test partition. These are dataset-level preparation results, not evidence of a trained or validated predictive model.
 
 ## Limitations
 
-- The project depends on the original `HospitalDB.sql` dataset.
-- Dataset-level findings may not generalize to real healthcare populations.
-- No predictive model was trained or evaluated.
-- The pipeline focuses on analytics and ML data preparation rather than deployment.
-- The project is intended for educational purposes and is not a clinical decision-support system.
+- This project focuses on SQL analytics, EDA, feature engineering, and ML preprocessing.
+- No predictive model is trained or evaluated in this notebook.
+- Findings from the example dataset may not generalize to real healthcare populations.
+- This is an educational project, not a clinical decision-support system.
 
-## Conclusion
-
-This milestone demonstrates an end-to-end workflow connecting **relational databases, SQL analytics, exploratory data analysis, feature engineering, and machine learning preprocessing**.
-
-It establishes a foundation for future predictive analytics and AI applications.
-
----
-
-**Project Type:** AI Internship Milestone 02  
-**Focus:** SQL, Healthcare Analytics, EDA, Feature Engineering, ML Preprocessing
+**Notebook:** `SQL_Healthcare_Analytics_Pipeline_GitHub_Ready.ipynb`
